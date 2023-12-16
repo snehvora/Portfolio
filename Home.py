@@ -6,7 +6,7 @@ from PIL import Image
 google_fonts_link = '<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">'
 
 st.set_page_config(
-    page_title="Zeel Thumar | Portfolio",
+    page_title="Sneh Vora | Portfolio",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
@@ -43,31 +43,31 @@ html_code = """
 st.markdown(html_code, unsafe_allow_html=True)
 
 intro_image = Image.open("images/intro-bg.png")
-st.image(image=intro_image)   
+st.image(image=intro_image, width=220)   
 
 st.title(":gray[Hey there!] &nbsp;👋 &nbsp;")
-st.title(":gray[I'm] Zeel Thumar.")
+st.title(":gray[I'm] Sneh Vora.")
 
 st.markdown("")
 
 # into cards
 cols = st.columns(3)
 with cols[0]:
-    ui.metric_card(title="Visualization", content="BI Tools", description="Power BI, Tableau, Metabase, Superset", key="card1")
+    ui.metric_card(title="Visualization", content="BI Tools", description="Power BI", key="card1")
 with cols[1]:
-    ui.metric_card(title="Machine Learning", content="ML Models", description="XGBoost, KNN, K-means, Ensemble models", key="card2")
+    ui.metric_card(title="Machine Learning", content="ML Models", description="ANN, CNN, GANs, RNN, KNN, K-means, SVM", key="card2")
 with cols[2]:
-    ui.metric_card(title="Natural language", content="LLM", description="Hugging Face, Langchain, OpenAI, Rasa", key="card3")
+    ui.metric_card(title="Natural language", content="LLM", description="Hugging Face, OpenAI", key="card3")
 
 st.markdown("")
 
 # get in touch url links
-url_mail = 'mailto:zeelthumar04@gmail.com'
-url_linkedIn = 'https://www.linkedin.com/in/zeel-thumar-522727213'
-url_GitHub = 'https://github.com/zeel-04'
-url_X = 'https://twitter.com/zeel_thumar'
+url_mail = 'mailto:sneh.vora126@gmail.com'
+url_linkedIn = 'https://www.linkedin.com/in/sneh-vora-b35358192/'
+url_GitHub = 'https://github.com/snehvora'
+url_X = 'https://twitter.com/snehvora126'
 
-st.write("I am a Data Science practitioner with a flair for deep learning, machine learning, and natural language processing. Specialized in fine-tuning LLMs like BERT and LLaMA for diverse use cases, I bring a track record of delivering practical solutions. Beyond technical prowess, I excel in MLOps, possess strong analytical thinking, and showcase leadership capabilities. Skillful at integrating ML models into production, I thrive on breaking down complex problems for data-driven solutions.")
+st.write("Welcome to my portfolio! I am a dedicated and versatile software developer with a strong foundation in backend development, complemented by hands-on experience in Machine Learning projects. My journey has been marked by a commitment to excellence, continuous learning, and a passion for crafting efficient and innovative solutions.")
 
 st.divider()
 #Social media icons
@@ -195,24 +195,36 @@ st.divider()
 #Experience   
 st.header("💼 &nbsp; Experience")
 
-#Esmsys
-st.subheader("Esmsys &nbsp; :gray[AI/ML Intern]")
-st.caption("Jul 2023 - Present")
-st.markdown("- Designed an API using FastAPI and Tesseract OCR engine and OpenCV to extract text of native languages from image.")
-st.markdown("- Finetuned Transformer model (XLM-RoBERTa) for custom labelled Name Entity Recognition for native language.")
+#BVM
+st.subheader("**BVM Infotech Pvt. Ltd., Ahmedabad** &nbsp; :gray[Backend Developer Intern]")
+st.caption("Jan 2023 - April 2023.")
+st.markdown("- During my internship, I undertook a pivotal role in crafting the backend infrastructure, leveraging the versatility and power of the Flask framework. Flask, renowned as a dynamic Python web framework, served as the cornerstone for developing resilient and streamlined server-side solutions.")
 
-#Esmsys
-st.subheader("Charusat University &nbsp; :gray[Research Associate]")
-st.caption("May 2023 - Jun 2023")
+with st.expander("Key Responsibilities"):
+    st.markdown("1. **Flask Framework Proficiency :** Demonstrated a deep understanding of Flask, harnessing its capabilities to build robust and flexible server-side applications. ")
+    st.markdown("2. **Functionalities Implementation :** Designed and implemented various backend functionalities, focusing on data handling, processing, and management. Ensured seamless interaction between the server and databases for efficient data retrieval and storage.")
+    st.markdown("3. **API Integration :** Orchestrated the integration of APIs, facilitating communication between different components of the system. Implemented RESTful API endpoints to enable smooth interaction with frontend applications.")
+    st.markdown("4. **Collaborative Teamwork :** Engaged in collaborative efforts with cross-functional teams, contributing to a cohesive and synergistic work environment. Participated in regular meetings and discussions to align backend development with overall project goals.")
+    st.markdown("5. **Problem Solving and Optimization :** Resolved complex technical challenges related to backend functionalities, demonstrating a proactive problem-solving approach. Conducted performance analysis and implemented optimizations to enhance the efficiency of the backend processes.")
+
+#Indigenous
+st.subheader("**Indigenous Technology, Surat** &nbsp; :gray[Python Developer Intern]")
+st.caption("May 2022 - July 2022.")
 st.markdown("- Achieved state-of-the-art results in six-way classification problem based on fake news leveraging transfer learning method of fine-tuning BERT model. ")
 st.markdown("- Evaluation of model was carried out on benchmark dataset LIAR.")
 
-#3fit
-st.subheader("3fit &nbsp; :gray[Backend Developer Intern]")
-st.caption("May 2022 - Jun 2022")
-st.markdown("- Designed a web portal using a wagtail CMS(Content management system) and PostgreSQL database to make web pages extraordinarily dynamic.")
-st.markdown("- Simplified the process of changing the content that appears on web pages with only a few clicks and the appropriate responsibilities and permissions.")
+#Divyam Infotech
+st.subheader("**Divyam Infotech Pvt. Ltd., Surat** &nbsp; :gray[Backend Developer Intern]")
+st.caption("June 2021 - July 2021.")
+st.markdown("- Worked on project ‘topofstyle.com’ wherein we were comparing of several products from different online websites and provide the affiliate link of products to customers for better understanding of price of same product on several online plateforms.")
+st.markdown("- Researched about how to scrap data automatically and update in database from time to time withoutany need of monitoring.")
+st.divider()
 
+#Teachnook, Bengaluru, Karnataka.
+st.subheader("**Teachnook, Bengaluru, Karnataka.** &nbsp; :gray[ML Intern]")
+st.caption("Jan 2023 to Feb 2023.")
+st.markdown("- My internship at Teachnook provided me with invaluable insights into the practical applications of machine learning in an educational context. I honed my skills in supervised learning, gained hands-on experience with model deployment, and contributed to the advancement of innovative solutions for enhancing the teaching and learning experience. ")
+st.markdown("- This internship not only enhanced my technical proficiency but also fostered a passion for leveraging machine learning to address real-world challenges in education.")
 st.divider()
 
 #Skills
@@ -229,6 +241,8 @@ with col2:
     st.write("CSS")
 with col3:
     st.write("Javascript")
+    st.write("C++")
+
 with col4:
     st.write("PHP")
 
@@ -243,39 +257,34 @@ with col2:
     st.write("Web Scraping")
 with col3:
     st.write("NLP")
-    st.write("Docker")
+    st.write("Git")
 with col4:
     st.write("Forecasting")
-    st.write("Git")
 
 st.subheader(":gray[Libraries and Frameworks]")
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
     st.write("Numpy")
-    st.write("Huggingface")
+    st.write("Tensorflow")
     st.write("Pytorch")
 with col2:
     st.write("Pandas")
     st.write("Flask")
-    st.write("pySpark")
+    st.write("Beautiful Soup")
 with col3:
     st.write("Matplotlib")
-    st.write("FastAPI")
-    st.write("Streamlit")
+    st.write("Selenium")
+    st.write("Requests")
 with col4:
     st.write("Scikit-learn")
-    st.write("MLflow")
+    st.write("Scrapy")
 
 st.subheader(":gray[Visualization Tools]")
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
     st.write("Power BI")
-with col2:
-    st.write("Apache Superset")
-with col3:
-    st.write("Looker Studio")
 
 st.subheader(":gray[Databases]")
 col1, col2, col3, col4 = st.columns(4)
@@ -286,21 +295,37 @@ with col2:
     st.write("BigQuery")
 with col3:
     st.write("MySQl")
-with col4:
-    st.write("MongoDB")
 
 st.divider()
 
 # Project Section
 st.header("🚀 &nbsp; Projects")
 
-# Salary Prediction Engine
-st.subheader(":gray[Salary Prediction Engine]")
-st.markdown("- Enhanced accuracy of existing salary prediction model through comprehensive data collection from Glassdoor using web scraping.")
-st.markdown("- Implemented advanced machine learning algorithms for in-depth salary trend analysis, offering valuable insights for optimized compensation strategies.")
+# Wordpress Automation with NLP and AI
+st.subheader(":gray[WPInsight Automator]")
+st.markdown("- 'WPInsight Automator' is an intelligent WordPress bot seamlessly blending Natural Language Processing (NLP) and Artificial Intelligence (AI) to revolutionize content management. This project combines advanced technologies to extract, paraphrase, and automate tasks within the WordPress ecosystem, ensuring a dynamic and constantly updated website.")
 
+with st.expander("Key Features"):
+    st.markdown("1. **News Extraction :**")
+    st.markdown("- WPInsight Automator scrapes news information from reputable sources like Hindustan Times, NDTV, and more.")
+    st.markdown("- Adaptable to changes: Utilizes dynamic scraping techniques to adjust to variations in website structures.")
+    st.markdown("2. **Paraphrasing with AI :**")
+    st.markdown("- Employs an API hosted on Digital Ocean for sophisticated paraphrasing, ensuring content uniqueness.")
+    st.markdown("- Enhances readability and originality, contributing to a more engaging user experience.")
+    st.markdown("3. **Automated WordPress Admin Tasks :**")
+    st.markdown("- Manages the WordPress admin autonomously, handling various tasks including post creation, deletion, and status changes.")
+    st.markdown("- Ensures seamless and efficient content management, reducing manual intervention.")
+    st.markdown("4. **Plagiarized Content Updates :**")
+    st.markdown("- Regularly updates the website with news and blog posts, guaranteeing information integrity and originality.")
+    st.markdown("- Employs anti-plagiarism measures to maintain content authenticity.")
+    st.markdown("5. **Comprehensive Post-Management :**")
+    st.markdown("- Handles a range of post-management tasks, including deleting, uploading, and changing post statuses.")
+    st.markdown("- Provides robust tools for effective content organization and maintenance.")
+    st.markdown("6. **File Management and SEO Integration :**")
+    st.markdown("- Manages file uploads seamlessly, ensuring multimedia elements complement the textual content.")
+    st.markdown("- Implements Basic SEO techniques through integration with the Rank Math SEO plugin, enhancing the website's search engine visibility.)")
+    
 st.markdown("")
-
 with st.expander("Tech Stack Used"):
 
     col1, col2, col3, col4 = st.columns(4)
@@ -309,56 +334,70 @@ with st.expander("Tech Stack Used"):
         st.write("**:gray[Selenium]**")
         st.write("**:gray[Numpy]**")
     with col2:
-        st.write("**:gray[Scikit learn]**")
-        st.write("**:gray[Seaborn]**")
+        st.write("**:gray[Tkinter]**")
+        st.write("**:gray[math]**")
     with col3:
-        st.write("**:gray[Random Forest]**")
-        st.write("**:gray[Matplotlib]**")
+        st.write("**:gray[smtplib]**")
+        st.write("**:gray[Transformers]**")
     with col4:
-        st.write("**:gray[Pandas]**")
-
-# Smart Chat Insights
-st.subheader(":gray[Smart Chat Insights]")
-st.markdown("- Accomplished seamless interaction with PDF documents through the implementation of a retrieval augmented generation system.")
-st.markdown("- Demonstrated proficiency in Natural Language Processing by incorporating Named Entity Recognized response answers, leading to the efficient extraction and categorization of key information and displaying knowledge graph for the same.")
-
-st.markdown("")
-
-with st.expander("Tech Stack Used"):
-
-    col1, col2, col3, col4 = st.columns(4)
-
-    with col1:
-        st.write("**:gray[LLM]**")
-        st.write("**:gray[Streamlit]**")
-    with col2:
-        st.write("**:gray[Vector Database]**")
-        st.write("**:gray[Knowledge Graph]**")
-    with col3:
-        st.write("**:gray[SpaCy]**")
-    with col4:
-        st.write("**:gray[Hugging Face]**")
-
-# Admission Management System
-st.subheader(":gray[Admission Management System]")
-st.markdown("- Reduced human effort in manually filling forms and managing the admission process by developing a web application with various roles and permissions.")
-st.markdown("- User Interface designed with bootstrap, PHP for backend logic, MySQL as a database all together provided an appropriate abstraction to the end user with multiple functionalities.")
-
-st.markdown("")
-with st.expander("Tech Stack Used"):
-
-    col1, col2, col3, col4 = st.columns(4)
-
-    with col1:
-        st.write("**:gray[PHP]**")
-        st.write("**:gray[HTML]**")
-    with col2:
-        st.write("**:gray[Bootstrap]**")
-        st.write("**:gray[CSS]**")
-    with col3:
+        st.write("**:gray[PyTorch]**")
         st.write("**:gray[MySQL]**")
+
+# Chatbot using Neural Networks
+st.subheader(":gray[Chatbot using Neural Networks]")
+st.markdown("- A Chatbot utilizing Long Short-Term Memory (LSTM) neural networks represents a sophisticated and efficient conversational agent. LSTMs are a type of recurrent neural network (RNN) specifically designed to address the vanishing gradient problem, making them well-suited for capturing long-term dependencies in sequential data, such as natural language.")
+
+
+with st.expander("Key Features"):
+    st.markdown("1. **Architecture :** The Chatbot employs a neural network architecture based on LSTM cells. LSTMs enable the model to retain and selectively update information over extended sequences, enhancing the understanding of context in conversations.")
+    st.markdown("2. **Natural Language Processing :** The Chatbot incorporates advanced Natural Language Processing (NLP) techniques to comprehend and generate human-like responses. Tokenization, word embeddings, and sequence-to-sequence learning contribute to the model's ability to grasp the nuances of language.")
+    st.markdown("3. **Training Data :** The Chatbot is trained on vast datasets comprising diverse and contextually rich conversations. The training data includes dialogues, allowing the model to learn patterns, context, and semantic relationships within the language.")
+    st.markdown("4. **Contextual Understanding :** Thanks to LSTM's inherent ability to maintain context over longer sequences, the Chatbot excels at understanding and responding coherently to multi-turn conversations. It recognizes the importance of context in delivering relevant and contextually aware replies.")
+    st.markdown("5. **User Interaction :** The Chatbot engages users in natural and intuitive conversations. It can handle a variety of inputs, including questions, statements, and requests, adapting its responses based on the ongoing dialogue.")
+    st.markdown("6. **Learning and Adaptation :** The Chatbot continuously learns and adapts its responses based on user interactions. It leverages feedback loops to improve its understanding of user preferences, language nuances, and emerging conversational trends.")
+    st.markdown("7. **Real-time Responsiveness :** The model is optimized for real-time responsiveness, ensuring quick and efficient communication. This is crucial for creating a seamless and natural conversational experience for users.")
+    st.markdown("8. **Integration :** The Chatbot can be seamlessly integrated into various platforms, such as websites, messaging apps, or customer support systems. Its versatility allows it to adapt to different use cases and industries.")
+
+
+st.markdown("")
+
+with st.expander("Tech Stack Used"):
+
+    col1, col2, col3, col4 = st.columns(4)
+
+    with col1:
+        st.write("**:gray[NumPy]**")
+    with col2:
+        st.write("**:gray[Pandas]**")
+    with col3:
+        st.write("**:gray[Tensorflow]**")
+        
+
+# DeepVision SynthCraft
+st.subheader(":gray[DeepVision SynthCraft]")
+st.markdown("- 'DeepVision SynthCraft' is an advanced deep learning project leveraging the cutting-edge technology of Deep Convolutional Generative Adversarial Networks (DCGANs). DCGANs have proven to be more powerful than ordinary GANs, and this project harnesses their capabilities for the synthesis of high-quality images.")
+
+with st.expander("Key Features"):
+    st.markdown("1. **DCGAN Architecture :** The project employs the sophisticated architecture of DCGANs, which integrates deep convolutional layers for enhanced feature extraction and generation. This architecture enables the model to produce realistic and visually appealing images.")
+    st.markdown("2. **Enhanced Image Synthesis :** Unlike traditional GANs, DCGANs excel in capturing intricate patterns and details, leading to the generation of more realistic and high-resolution images. The project focuses on pushing the boundaries of image synthesis, producing results that are visually stunning and exhibit a high level of fidelity.")
+    st.markdown("3. **Epoch-Based Image Saving :** Images are a snapshot of the learning process. In 'DeepVision SynthCraft,' output images are saved at regular intervals, specifically every 100 epochs. This provides an insightful visual journey showcasing the evolution of the model's ability to generate increasingly sophisticated and realistic images over the training period.")
+    st.markdown("4. **gan_images Folder :** All generated images are systematically organized and stored in the 'gan_images' folder. This structured approach facilitates easy access, analysis, and comparison of images at different stages of the training process.")
+    st.markdown("5. **Creative Exploration :** 'DeepVision SynthCraft' encourages creative exploration, allowing users to witness the diversity and creativity inherent in the generated images. The project offers a canvas for artistic expression through the lens of artificial intelligence.")
+
+
+st.markdown("")
+with st.expander("Tech Stack Used"):
+
+    col1, col2, col3, col4 = st.columns(4)
+
+    with col1:
+        st.write("**:gray[Numpy]**")
+    with col2:
+        st.write("**:gray[Sklearn]**")
+    with col3:
+        st.write("**:gray[tensorflow]**")
     with col4:
-        st.write("**:gray[Javascript]**")
+        st.write("**:gray[Matplotlib]**")
 
 # Education
 st.header("📒 &nbsp; Education")
@@ -366,9 +405,9 @@ st.header("📒 &nbsp; Education")
 st.markdown("")
 
 data = {
-    'Institution' : ['BAPS Swaminarayan Vidhyamandir', 'BAPS Swaminarayan Vidhyamandir', 'CHARUSAT University'],
+    'Institution' : ['Sarvodaya Sr Sec School Ranpur Kota, Rajasthan.', 'Om Shanti Eng. Med. School Morbi Rajkot, Gujarat.', 'CHARUSAT University'],
     'Level' : ['10th grade', '12th Grade', 'Undergraduate'],
-    'Percentage' : ['92', '76', '94']
+    'Percentage' : ['95', '75', '88 ']
 }
 
 st.dataframe(data=data, use_container_width=True)
